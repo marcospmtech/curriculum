@@ -1,9 +1,22 @@
-body, html {
+/* =========================
+   RESET GERAL
+   ========================= */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
+
+html, body {
+    overflow-x: hidden;
+    background-color: #50207A;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
 
 header {
     background-color: #50207A;
@@ -13,11 +26,15 @@ header {
     align-items: center;
 }
 
+
+/* =========================
+   LOGO
+   ========================= */
+
 .logo-grid {
     display: flex;
     align-items: center;
-    margin: 0;
-    padding-left: 300px;
+    padding-left: 5%;
     height: 80px;
     flex: 1;
     cursor: pointer;
@@ -25,8 +42,12 @@ header {
 
 .logo-grid img {
     height: 60px;
-    margin: 0;
 }
+
+
+/* =========================
+   MENU
+   ========================= */
 
 .sections-grid {
     display: flex;
@@ -34,7 +55,7 @@ header {
     align-items: center;
     height: 80px;
     flex: 1;
-    padding-right: 300px;
+    padding-right: 5%;
     gap: 40px;
 }
 
@@ -46,45 +67,44 @@ header {
     font-weight: 700;
 }
 
+
+/* =========================
+   MAIN
+   ========================= */
+
 main {
-    margin: 0;
-    padding: 0;
-    background-color: #50207A;
     display: flex;
     flex-direction: column;
     width: 100%;
     min-height: calc(100vh - 80px);
-    overflow-x: hidden;
 }
+
+
+/* =========================
+   SECTION
+   ========================= */
 
 section {
     display: flex;
     min-height: 100vh;
     width: 100%;
-    background-color: #50207A;
     justify-content: center;
     align-items: center;
-    padding: 0 300px;
+    padding: 0 5%;
     gap: 44px;
 }
 
+
+/* =========================
+   TEXTO
+   ========================= */
+
 .title-grid {
     flex: 1;
-    height: 70%;
-    width: 830px;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
     flex-direction: column;
-}
+    gap: 10px;
 
-.perfil-grid {
-    flex: 1;
-    height: 70%;
-    width: 830px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .title-grid h3 {
@@ -92,10 +112,6 @@ section {
     font-size: 22px;
     color: #FFF;
     font-weight: 700;
-    margin: 0;
-    padding: 0;
-    line-height: 1.2;
-    margin-left: 250px;
 }
 
 .title-grid h1 {
@@ -103,14 +119,23 @@ section {
     font-size: 52px;
     color: #FFF;
     font-weight: 700;
-    margin: 0;
-    padding: 0;
-    line-height: 1.2;
-    margin-left: 250px;
+}
+
+
+/* =========================
+   FOTO DE PERFIL
+   ========================= */
+
+.perfil-grid {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .perfil-grid img {
-    height: 100%;
-    width: 70%;
-    border-radius: 50%;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5%;
 }
